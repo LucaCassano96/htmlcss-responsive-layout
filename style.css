@@ -16,7 +16,7 @@ a:hover{
 
 .container{
     width: 90%;
-    height: 100px;
+    min-height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -82,23 +82,40 @@ nav a:last-child:hover{
 }
 
 
-
-
-
-
-
-
-
-
 /* main */
 
      /*applications  */
 
 #applications .container{
-    background-color: blue;
     margin-top: 100px;
-    
+    display: block;
 }
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .card-demo{
+    width: 60%;
+    min-height:100px ;
+    background-color: rgb(152, 232, 246);
+}
+
+.row .card-clean-code{
+    width: 35%;
+    min-height:100px;
+    background-color: rgb(152, 232, 246);
+}
+
+.card-web-design, .card-developement, .card-branding{
+    width: calc(90%/3 );
+    background-color: #2c7cfe;
+    min-height: 100px ;
+    margin-top: 5%;
+}
+
 
 
         /* planning */
@@ -106,6 +123,8 @@ nav a:last-child:hover{
 #planning .container{
     background-color: rgb(242, 0, 255);
     width: 100%;
+    display: block;
+    
 }
 
 
@@ -114,6 +133,7 @@ nav a:last-child:hover{
 
 #partners .container{
     background-color: rgb(0, 234, 255);
+    
 }
 
 
@@ -123,6 +143,7 @@ nav a:last-child:hover{
 #benefits .container{
     background-color: rgb(0, 255, 60);
     width: 100%;
+
 }
 
 
