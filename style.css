@@ -60,7 +60,7 @@ nav a:last-child{
     margin-left: 20px ;
 }
 
-nav a:last-child:hover, .card-demo-description a:hover{
+nav a:last-child:hover, .card-demo-description a:hover, .benefit-card a:hover{
     text-decoration: none;
     color: #232323;
     background-color: #f1f1f1;
@@ -303,12 +303,59 @@ nav a:last-child:hover, .card-demo-description a:hover{
 
            /* benefits */
 
-#benefits .container{
-    background-color: rgb(0, 255, 60);
+#benefits{
+    background-color: rgb(177, 133, 230);
     width: 100%;
+    margin-top: 50px;
+}
+
+.container-benefits{
+    width: 80%;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+   
 
 }
 
+.container-benefits h2{
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.row-benefits{
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.benefit-card{
+    background-color: #fff;
+    width: 285px;
+    min-height: 200px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.benefit-card h3, .benefit-card h4{
+    color:  rgb(177, 133, 230);
+    margin: 20px 0;
+}
+
+.benefit-card h3{
+    font-size: 50px;
+}
+
+.benefit-card a{
+    padding: 8px 30px;
+    background-color:rgb(177, 133, 230) ;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+}
 
 
 
@@ -406,6 +453,11 @@ footer{
 
         .strategic-planning img, .app-development img{
             max-width: 100%;
+            
+        }
+
+
+        .benefit-card{
             
         }
 
