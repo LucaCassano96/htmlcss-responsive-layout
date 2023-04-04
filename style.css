@@ -124,16 +124,15 @@ nav a:last-child:hover, .card-demo-description a:hover{
 }
 
 .card-demo-img{
-    width: 40%;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
     padding: 50px 40px 0 0;
-    
 }
 
 .card-demo-img img{
     max-width: 100%;
-    display: block;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .row .card-clean-code{
@@ -173,21 +172,132 @@ nav a:last-child:hover, .card-demo-description a:hover{
 
         /* planning */
 
-#planning .container{
-    background-color: rgb(242, 0, 255);
+#planning {
+    margin-top: 50px;
+    background-color: rgb(209, 162, 241);
     width: 100%;
-    display: block;
-    
+    display: flex;
+    min-height: 200px ;
+    padding: 30px;
 }
+
+.container-planning{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.strategic-planning, .app-development{
+    max-width: 50%;
+    padding: 100px;
+}
+
+.app-development{
+    border-radius: 20px;
+}
+
+.strategic-planning img{
+    max-width: 80%;
+    display: block;
+}
+
+.strategic-planning h2, .strategic-planning p {
+    color: #fff;
+}
+
+.strategic-planning h2{
+    margin: 100px 0 50px 0;
+}
+
+
+.app-development{
+    background-color: #fff;
+    text-align: center
+
+}
+
+.app-development img{
+    max-width: 50% ;
+}
+
+.app-development h2{
+    margin: 30px 0;
+}
+
+.app-development p{
+    font-style: italic;
+}
+
+.app-development a i{
+    padding: 20px;
+    border-radius: 100%;
+    background-color: rgb(177, 133, 230);
+    font-size: 20px;
+    margin-top: 40px;
+    color: #000;
+}
+
+
+
 
 
 
            /* partners */
 
-#partners .container{
-    background-color: rgb(0, 234, 255);
+#partners {
+    margin-top: 50px;
     
 }
+
+.container-partners{
+    width: 80%;
+    min-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-partners h2{
+    margin: 40px 0;
+    color:  rgb(177, 133, 230);
+}
+
+.container-partners p{
+    margin-bottom: 30px;
+}
+
+.partner-profile{
+    width: 100%;
+    margin: 20px 0;
+    min-height: 200px;
+    background-color: rgb(177, 133, 230) ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-img{
+    
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profile-description{
+    width: 75%;
+    color: #fff;
+}
+
+
 
 
 
@@ -266,6 +376,41 @@ footer{
 
           }
 
+
+          /* planning */
+
+          #planning{
+            display: block;
+          }
+
+          .container-planning{
+            display: block;
+          }
+
+          .strategic-planning, .app-development{
+            max-width: 100%;
+            padding: 30px;
+    
+        }
+
+        .strategic-planning h2{
+            margin: 50px 0 30px 0;
+            text-align: left;
+        }
+
+        .strategic-planning p{
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+
+        .strategic-planning img, .app-development img{
+            max-width: 100%;
+            
+        }
+
+        
+
   }
 
 
@@ -290,6 +435,22 @@ footer{
           .card-demo-img{
             width: 100%;
             padding: 10px 40px 0 40px;
+          }
+
+          /* partner */
+
+          .partner-profile{
+            display: block;
+          }
+
+          .profile-img{
+            margin: 0 auto;
+          }
+
+          .profile-description{
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
           }
 
 
