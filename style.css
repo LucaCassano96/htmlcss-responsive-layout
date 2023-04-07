@@ -7,375 +7,536 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: 'PT Sans', sans-serif;
 }
 
 a{
     text-decoration: none;
+
 }
 
-a:hover{
-    text-decoration: underline;
+
+/* mobile first */
+
+   /*  header */
+
+header{
+
+    width: 100%;
+    height: 100px;
+    background-color:  #1670ff;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+
+}
+
+.header-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+.header-container .menu i{
+    font-size: 40px;
     color: #fff;
 }
 
-
-.container{
-    width: 80%;
-    min-height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*  */
-
-header{
-    width: 100%;
-    height: 100px;
-    background-color:  #2c7cfe;
-    top: 0;
-    position: fixed;
-}
-
-
-#logo, nav{
-    height: 100% ;
-    display: flex;
-    align-items: center;
-}
-
-nav a{
-  padding-left: 20px ;
-  color: #fff;
-}
-
-nav a:last-child{
-    color: #000;
-    background-color: #fff;
-    padding: 10px 15px;
-    border-radius: 18px;
-    margin-left: 20px ;
-}
-
-nav a:last-child:hover, .card-demo-description a:hover, .benefit-card a:hover{
-    text-decoration: none;
-    color: #232323;
-    background-color: #f1f1f1;
-}
-
-
-#burger-menu{
+.header-container nav{
     display: none;
-}
-
-
-
-
-
-/* main */
-
-     /*applications  */
-
-#applications .container{
-    margin-top: 150px;
-    display: block;
-}
-
-.row{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     
 }
 
-.card-demo, .card-clean-code, .card-web-design, .card-developement, .card-branding{
-    border-radius: 18px ;
-}
-
-.row .card-demo{
-    width: 60%;
-    background-color: rgb(188, 232, 240);
-    display: flex;
-}
-
-.card-demo-description{
-    width: 60%;
+.header-container nav a{
+    color: #fff;
     padding: 30px;
 }
 
-.card-demo-description h2{
-    color: #2c7cfe;
-    margin-bottom: 40px;
+.header-container nav a:hover{
+    color: rgb(237, 237, 237);
+    text-decoration: underline;
 }
 
-.card-demo-description p{
-    margin-bottom: 40px;
-    line-height: 25px;
+.header-container nav a:last-child{
+    padding: 7px 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    margin-left: 15px;
 }
 
-.card-demo-description a{
-    color: #f1f1f1;
-    padding: 10px 25px;
-    background-color: #2c7cfe;
-    border-radius: 20px;
-}
-
-.card-demo-img{
-    display: flex;
-    flex: 1;
-    align-items: flex-end;
-    padding: 50px 40px 0 0;
-}
-
-.card-demo-img img{
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.row .card-clean-code{
-    width: 35%;
-    background-color:  rgb(188, 232, 240);
-    text-align: center;
-    padding: 30px;
-
-}
-
-.card-clean-code i, .card-web-design i, .card-developement i, .card-branding i {
-    color: #2c7cfe;
-    font-size: 70px;
-}
-
-.card-clean-code h2, .card-web-design h2,  .card-developement h2, .card-branding h2  {
-    margin: 30px 0;
-    color: #2c7cfe;
+.header-container nav a:last-child:hover{
+    
+    background-color:rgb(237, 237, 237);
+    text-decoration: none;
 }
 
 
 
 
 
-.card-web-design, .card-developement, .card-branding{
-    width: calc(90%/3 );
-    background-color: #2c7cfe;
-    min-height: 100px ;
-    margin-top: 5%;
-    background-color:  rgb(188, 232, 240);
-    text-align: center;
-    padding: 30px;
-
-}
 
 
 
-        /* planning */
+   /* main */
 
-#planning {
-    margin-top: 50px;
-    background-color: rgb(209, 162, 241);
-    width: 100%;
-    display: flex;
-    min-height: 200px ;
-    padding: 30px;
-}
+       /* applications */
 
-.container-planning{
+#applications{
     width: 80%;
     margin: 0 auto;
-    display: flex;
+    margin-top: 150px;
+    min-height: 100px;
+    margin-bottom: 50px;
 }
 
-.strategic-planning, .app-development{
-    max-width: 50%;
-    padding: 100px;
-}
-
-.app-development{
+.application{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(166, 225, 253);
+    text-align: center;
+    color: #494949;
     border-radius: 20px;
+    margin-bottom: 4%;
+    
+}
+
+.application h2{
+    text-align: center;
+    color: #1670ff;
+}
+
+.application p{
+    padding: 40px;
+}
+
+
+.application i{
+    font-size: 100px;
+    color: #1670ff;
+    margin: 30px 0;
+}
+
+
+      /* big application */
+
+.application-description{
+    text-align: left;
+    padding: 40px;
+}
+
+.application-description p{
+    padding: 20px 0 0 0;
+}
+
+.application-description a{
+    color: #fff;
+    padding: 7px 30px;
+    background-color: #1670ff;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.application-description a i{
+    margin: 0 5px 0 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.application-description a:hover{
+    background-color: #0062ff;
+}
+
+.application-img{
+    object-fit: cover;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.application-img img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+        /*strategic planning   */
+
+#strategic-planning{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(159, 111, 236) ;
+    margin-bottom: 50px;
+    padding: 40px 0;
+}
+
+
+.strategic-planning{
+    width: 80%;
+    min-height: 200px;
+    margin: 0 auto;
+    background-color:  rgb(159, 111, 236) ;
+    color: #fff;
+}
+
+.strategic-planning h2, .strategic-planning p{
+    margin: 40px 0;
 }
 
 .strategic-planning img{
-    max-width: 80%;
-    display: block;
+    width: 100%;
 }
 
-.strategic-planning h2, .strategic-planning p {
-    color: #fff;
+.strategic-planning:nth-child(2){
+    background-color:#fff;
+    color: #000;  
+    text-align: center;
+    padding-bottom: 40px;
+    border-radius: 30px;
 }
 
-.strategic-planning h2{
-    margin: 100px 0 50px 0;
-}
-
-
-.app-development{
-    background-color: #fff;
-    text-align: center
-
-}
-
-.app-development img{
-    max-width: 50% ;
-}
-
-.app-development h2{
-    margin: 30px 0;
-}
-
-.app-development p{
+.strategic-planning:nth-child(2) p{
+    padding: 0 30px;
     font-style: italic;
 }
 
-.app-development a i{
+.strategic-planning:nth-child(2) a{
     padding: 20px;
     border-radius: 100%;
-    background-color: rgb(177, 133, 230);
-    font-size: 20px;
-    margin-top: 40px;
-    color: #000;
-}
-
-
-
-
-
-
-           /* partners */
-
-#partners {
-    margin-top: 50px;
-    
-}
-
-.container-partners{
-    width: 80%;
-    min-height: 100px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.container-partners h2{
-    margin: 40px 0;
-    color:  rgb(177, 133, 230);
-}
-
-.container-partners p{
-    margin-bottom: 30px;
-}
-
-.partner-profile{
-    width: 100%;
-    margin: 20px 0;
-    min-height: 200px;
-    background-color: rgb(177, 133, 230) ;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    text-align: left;
-}
-
-.profile-img{
-    
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-
-.profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 100%;
-}
-
-.profile-description{
-    width: 75%;
-    color: #fff;
-}
-
-
-
-
-
-           /* benefits */
-
-#benefits{
-    background-color: rgb(177, 133, 230);
-    width: 100%;
-    margin-top: 50px;
-}
-
-.container-benefits{
-    width: 80%;
-    min-height: 100px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-   
-
-}
-
-.container-benefits h2{
-    padding: 50px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.row-benefits{
- display: flex;
- justify-content: space-evenly;
- flex-wrap: wrap;
-}
-
-.benefit-card{
-    background-color: #fff;
-    width: 285px;
-    min-height: 200px;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 20px;
-}
-
-.benefit-card h3, .benefit-card h4{
-    color:  rgb(177, 133, 230);
-    margin: 20px 0;
-}
-
-.benefit-card h3{
-    font-size: 50px;
-}
-
-.benefit-card a{
-    padding: 8px 30px;
-    background-color:rgb(177, 133, 230) ;
-    border-radius: 15px;
-    color: #fff;
+    background-color: rgb(159, 111, 236);
     display: inline-block;
     margin-top: 30px;
 }
 
-
-
-            /* about-us */
-
-#about-us .container{
-    background-color: rgb(225, 255, 0);
+.strategic-planning:nth-child(2) a i{
+    font-size: 20px;
+    color: #000;
 }
 
-           /* subscribe */
+.strategic-planning:nth-child(2) a:hover{
+    background-color: rgb(146, 98, 224);
+}
 
-#subscribe .container{
-    background-color: brown;
+
+
+
+
+
+           /*testimonials  */
+
+#testimonials{
+    width: 80%;
+    min-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials-description{
     width: 100%;
+    min-height: 100px;
+    margin: 70px 0;
 }
 
+.testimonials-description h2{
+    margin: 20px 0;
+    color: rgb(146, 98, 224);
+}
+
+.testimonial{
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 30px;
+    background-color: rgb(146, 98, 224);
+    border-radius: 30px;
+    padding: 20px 0;
+}
+
+.testimonial figure{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+
+.testimonial figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .testimonial-caption{
+ padding: 0 20px;
+ color: #fff;
+}
+
+.testimonial .testimonial-caption h4{
+ margin: 20px 0;
+}
+
+
+
+
+
+
+
+       /* benefits */
+
+#benefits{
+    width: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+    background-color: rgb(146, 98, 224);
+    margin-bottom: 70px;
+    
+}
+
+   #benefits h2{
+    width: 80%;
+    margin: 70px auto;
+    padding-top: 70px;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(146, 98, 224);;
+    color: #fff;
+    
+
+}
+
+
+.benefits-container{
+    width: 80%;
+    min-height:200px;
+    background-color:rgb(146, 98, 224) ;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.card-benefit{
+    width: 100%;
+    min-height: 200px ;
+    background-color: #fff;
+    color: rgb(146, 98, 224);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.card-benefit h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.card-benefit h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-benefit p{
+    color: #494949;
+}
+
+.card-benefit a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 6px 35px;
+    background-color: rgb(146, 98, 224);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.card-benefit a:hover, .about-us-profile-caption a:hover{
+ background-color: rgb(134, 75, 228) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+        /* about us */
+
+#about-us{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 200px;
+    margin-bottom: 70px;
+}
+
+.about-us-description{
+    width: 100%;
+    min-height: 200px ;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.about-us-description h2, .about-us-profile-caption h2{
+    color:  rgb(146, 98, 224);
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.about-us-description p{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.about-us-profile{
+    width: 100%;
+    min-height: 200px ;
+    margin-bottom: 30px;
+}
+
+.about-us-profile-img{
+    position: relative;
+}
+
+.about-us-profile-img i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:  rgb(146, 98, 224);
+    font-size: 50px;
+}
+
+.about-us-profile-img, .about-us-profile-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-us-profile-caption a{
+    color: #fff;
+    background-color:  rgb(146, 98, 224);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+
+
+        /*get-started  */
+
+#get-started{
+    width: 100%;
+    min-height: 200px ;
+    background-color: rgb(146, 98, 224);
+}
+
+.get-started-description{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    min-height: 200px;
+    text-align: center;
+    background-color: rgb(146, 98, 224);
+    color: #fff;
+}
+
+.get-started-description h5{
+     font-size: 20px;
+     margin-bottom: 30px;
+}
+
+.get-started-description h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.get-started-description h2{
+    font-size: 100px;
+    color: rgb(253, 185, 26);
+    margin-bottom: 30px;
+}
+
+.get-started-description p{
+    margin-bottom: 50px;
+}
+
+.get-started-description .started{
+    display: inline-block;
+    padding: 20px 80px;
+    background-color: #fff;
+    color: rgb(146, 98, 224);
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.get-started-description .started:hover{
+    background-color: #efefef;
+    text-decoration: underline;
+}
+
+.get-started-description div{
+    padding-bottom: 50px;
+}
+
+.get-started-description div a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.get-started-description div a:hover{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+
+
+
+         /* footer */
 
 footer{
-    min-height: 100px;
-    background-color: rgb(74, 74, 74);
+    width: 100%;
+    min-height: 200px ;
+    background-color: rgb(62, 62, 62);
+    
+}
+
+.footer-description{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: rgb(62, 62, 62);
+    text-align: center;
+    color: #fff;
+}
+
+.footer-description p{
+padding: 80px 0;
+
+}
+
+.footer-description div{
+    padding-bottom: 30px;
+}
+
+.footer-description a{
+    color: rgb(146, 98, 224);
+    text-decoration: underline
+}
+
+.footer-description a:hover{
+    color: rgb(134, 77, 225);
 }
 
 
@@ -383,127 +544,193 @@ footer{
 
 
 
-    /* mobile devices */
 
 
-            /* tablet */
+/* media queries */
 
-    @media screen and (max-width: 768px) {
-   
-        /* header */
-      nav a{
-          display: none;
-        }
-  
-        #burger-menu {
-          display: flex;
-          align-items: center;
-      }
-  
-      #burger-menu i{
-          color: #fff;
-          font-size: 30px;
-      }
-  
-      /* main */
-  
-          /*applications  */
-  
-           .row .card-demo{
-              display: block;
-          }
-        
-          .card-demo-description {
-            width: 100%;
-          }
+        /* tablet */
 
-          .card-demo-img{
-            width: 60%;
-            padding: 0;
+@media screen and (min-width:768px) {
 
-          }
-
-
-          /* planning */
-
-          #planning{
-            display: block;
-          }
-
-          .container-planning{
-            display: block;
-          }
-
-          .strategic-planning, .app-development{
-            max-width: 100%;
-            padding: 30px;
-    
-        }
-
-        .strategic-planning h2{
-            margin: 50px 0 30px 0;
-            text-align: left;
-        }
-
-        .strategic-planning p{
-            margin-bottom: 40px;
-            text-align: left;
-        }
-
-
-        .strategic-planning img, .app-development img{
-            max-width: 100%;
-            
-        }
-
-
-        .benefit-card{
-            
-        }
-
-        
-
-  }
-
-
-      /* smarthphone */
-
-      @media screen and (max-width: 480px){
 
         /* main */
-  
-          /*applications  */
-  
-          .row{
-            display: block;
-          }
 
-          .row .card-demo, .row .card-clean-code, .card-web-design, .card-developement, .card-branding{
-            width: 100%;
-            margin-top: 20px;
-            text-align: center;
-          }
+            /* application */
 
-          .card-demo-img{
-            width: 100%;
-            padding: 10px 40px 0 40px;
-          }
+    #applications {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
 
-          /* partner */
+    .application:first-child {
+        width: 66%;
+        margin-bottom: 4%;
+    }
 
-          .partner-profile{
-            display: block;
-          }
+    .application:nth-child(2){
+        width: 30% ;
+        margin-bottom: 4%;
+    }
 
-          .profile-img{
-            margin: 0 auto;
-          }
+    .application:nth-child(3), .application:nth-child(4), .application:nth-child(5) {
+        width: 30%;
+    }
 
-          .profile-description{
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-          }
 
+     /* testimonials */
+
+    .testimonial{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonial figure{
+      
+    margin-left: 20px;
+    }
+
+    .testimonial .testimonial-caption{
+        width: calc(100% - 170px);
+        text-align: start;
+        padding-left: 50px;
+    }
+
+
+         /* benefits */
+
+    .benefits-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-benefit {
+        width: calc(50% - 20px);
+    }
+
+
+         /* about us */
+    
+    #about-us{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-description{
+        width: 50%;
+    }
+
+    .about-us-profile{
+        width: 35%;
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+        /* dextop */
+
+@media screen and (min-width:1024px) {
+    
+
+    /* header menu */
+
+    .header-container .menu{
+        display: none;
+    }
+
+    .header-container nav {
+        display: block;
+    }
+
+
+    /* main */
+
+        /* application */
+
+    .application:first-child{
+    display: flex;
+
+    }
+
+    .application:first-child h2{
+        text-align: start;
+    }
+
+    .application-description, .application-img{
+        width: 48%;
+        margin-right: 2%;
+
+        
+    }
+
+    .application-img img{
+        width: 250px;
+        /* object-fit: cover; */
+    }
+    
+    .application-img {
+       display: flex;
+       justify-content: flex-end;
+       padding: 70px 50px 0 0;
+    }
+
+
+      /* Planning */
+      #strategic-planning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .strategic-planning{
+        width: 30%;
+        margin: 0;
+        margin-left: 70px;
+      }
+
+      .strategic-planning:nth-child(1) img{
+        width: 70%;
+      }
+
+      .strategic-planning:nth-child(2){
+        margin-top: 200px;
+        padding-bottom: 5px;
+      }
+
+      .strategic-planning:nth-child(2) h2, .strategic-planning:nth-child(2) p, .strategic-planning:nth-child(2) a{
+        margin: 15px 0;
+       
 
       }
+
+      .strategic-planning:nth-child(2) img{
+        width: 40%;
+      }
+
+
+      
+         /* benefits */
+
+         .card-benefit {
+            width: calc((100%/ 3) - 30px);
+        }
+      
+}
+
